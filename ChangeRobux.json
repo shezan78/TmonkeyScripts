@@ -1,0 +1,20 @@
+// ==UserScript==
+// @name         Roblox robux changer
+// @namespace    http://tampermonkey.net/
+// @version      2024-03-22
+// @description  Roblox Robux changer 3.0 - SHEZAN MADE THIS!!!@
+// @author       shritil8
+// @match        *://*.roblox.com/*
+// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @grant        none
+// ==/UserScript==
+
+function start() {
+    var robux = "11,452" // change dis
+    var precise_robux = "11,452" // change this
+    document.getElementById('nav-robux-amount').innerHTML = robux
+    setTimeout(start, 0);
+    document.getElementById('nav-robux-balance').innerHTML = precise_robux + " Robux"
+    setTimeout(start, 0);
+}
+start();
